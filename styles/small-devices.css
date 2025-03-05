@@ -16,7 +16,7 @@
     
     header > div:first-child > img{
         max-width: 30%;
-        max-height: auto;
+        height: auto;
         margin-right: 1em;
     }
     
@@ -82,7 +82,7 @@
 
     .country-article > figure > img{
         max-width: 100%;
-        max-height: auto;
+        height: auto;
     
         margin-bottom: 1em;
     }
