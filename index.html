@@ -9,8 +9,11 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium-devices.css">
+    <link rel="stylesheet" href="styles/small-devices.css">
 
     <script src="scripts/lastUpdate.js" defer></script>
+    <script src="scripts/toggleMenu.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,12 +21,13 @@
             <img src="images/my-photo.webp" alt="A photo of me">
             <h1>Maximo A. Gomez</h1>            
         </div>
-        <nav>
+        <nav id="menu">
             <a href="#">Home</a>
             <a href="chamber.html">Chamber</a>
             <a href="https://github.com/maxcoder12">GitHub Profile</a>
             <a href="https://www.linkedin.com/feed/">LinkedIn</a>
         </nav>
+        <span class="toggle" id="showMenu">v</span>
     </header>
     <main>
         <section class="course-work">
@@ -44,12 +48,12 @@
         <section class="programming-certificate">
             <h2>Web and Computer Programming Certificate</h2>
             <nav>
-                <p class="black-button" id="allButton">All</p>
+                <p class="selected-button black-button" id="allButton">All</p>
                 <p class="black-button" id="cseButton">CSE</p>
                 <p class="black-button" id="wddButton">WDD</p>
             </nav>
-            <div>
-                <ol class="courses-certificate">
+            <div class="courses-certificate">
+                <ol>
                     <li id="cse210">CSE 110</li>
                     <li id="wdd130">WDD 130</li>
                     <li id="cse111">CSE 111</li>

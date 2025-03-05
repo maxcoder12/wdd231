@@ -1,0 +1,17 @@
+@media screen and (max-width:860px){
+    .course-work{
+        grid-column: 1/5;
+    }
+    
+    .country-article{
+        grid-column: 1/5;    
+    }
+
+    .country-article > figure > img{
+        max-width: 400px;
+        max-height: 300px;
+    
+        margin-bottom: 1em;
+    }
+
+}
