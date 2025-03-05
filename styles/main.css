@@ -2,7 +2,7 @@
     --primary-color: #2E2E2E;
     --accent-color: #D72638;
     --secondary-color: #141414;
-    --secondary-background:#ffffff;
+    --secondary-background: #ffffff;
     --soft-gray: #B0B0B0;
 }
 
@@ -165,7 +165,7 @@ section > h2, article > h2{
     
 }
 
-.courses-certificate  ol  li{
+.courses-certificate ol li{
     flex-basis: 25%;
 
     list-style: none;
