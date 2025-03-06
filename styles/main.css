@@ -144,6 +144,7 @@ section > h2, article > h2{
     display: flex;
 
     justify-content: center;
+    
 
     border-bottom: 2px solid var(--secondary-background);
 
@@ -154,30 +155,47 @@ section > h2, article > h2{
 .courses-certificate{
     display: flex;
 
+    flex-direction: column;
+
+    align-items: center;
+
     justify-content: center;
     flex-wrap: wrap;
+
+    color: var(--secondary-background);
 
 }
 
 .courses-certificate > ol{
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    width: 90%;
+
+    margin: 1em auto;
+
+    box-sizing: border-box;
+
+    gap: 1em;
 }
 
 .courses-certificate ol li{
-    flex-basis: 25%;
+    flex-basis: 30%;
+
+    max-width: 30%;
 
     list-style: none;
 
+    border: 3px solid black;
+
     padding: 1em 0;
-    margin: 1em;
+    margin: 0;
     border-radius: 5px;
     font-size: 1.1em;
     text-align: center;
 
     text-decoration: none;
-}
+} 
 
 .black-button{
     cursor: pointer;
@@ -194,7 +212,7 @@ section > h2, article > h2{
     margin: 0px 1em;
 }
 
-.selected-button{
+.completed-button{
     background-color: var(--secondary-background);
     color: var(--secondary-color);
 }
