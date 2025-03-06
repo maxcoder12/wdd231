@@ -22,7 +22,9 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
 }
-
+h1{
+    grid-column: 1/5;
+}
 header{
     box-shadow: 10px 10px 30px var(--secondary-color);
 
@@ -48,7 +50,7 @@ header > div:first-child > img{
 
 }
 
-header > div:first-child > h1{
+header > div:first-child > p{
     font-size: 2.3em;
 }
 
