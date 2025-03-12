@@ -1,0 +1,28 @@
+{
+    "family-name" : "Gomez",
+    "move-in-date" : "2021-07-21",
+    "family-length" : 4,
+    "visited-by-bishop" : false,
+    "members": [
+    {
+        "name" : "Yoel Gomez",
+        "gender": "male",
+        "birthday" : "1975-10-24"
+    },
+    {
+        "name" : "Jennifer Barrios",
+        "gender" : "female",
+        "birthday" : "1980-03-05"
+    },
+    {
+        "name" : "Maximo Gomez",
+        "gender" : "male",
+        "birthday" : "2003-12-05"
+    },
+    {
+        "name": "Sebastian Gomez",
+        "gender" : "male",
+        "birthday" : "2009-09-29"
+    }
+    ]
+}
