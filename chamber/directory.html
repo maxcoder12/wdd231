@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maximo A Gomez">
+    <meta name="description" content="A directory page of a chamber of commerce to provido some useful info about the business">
+
+    <title>Chambery</title>
+
+    <meta property="og:title" content="WDD 231 Home Page Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/gramado-medium.webp">
+    <meta property="og:url" content="https://maxcoder12.github.io/wdd231/">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-devices.css">
+    <link rel="stylesheet" href="styles/large-devices.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/smartNav.js" defer></script>
+    <script src="scripts/lastModified.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/favicon.ico" width="60"  height="60">
+        <h2>Chambery</h2>
+        <button id="myButton"></button>
+    </header>
+
+    <nav id="animatedme">
+        <ul class="menuLinks">
+            <li><a href="#" title="Home">Page One</a></li>
+            <li class="current-menu-item"><a href="#">Page Two</a></li>
+            <li><a href="#" title="Service">Page Three</a></li>
+            <li><a href="#" title="History">Page Four</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div>
+            <h3>Chambery - Chamber of Commerce</h3>
+            <p>Av. Getuli, 510 - Gramado, RS</p>
+            <p>Cham@chambery.org</p>
+            <p>(54) 2254-6565</p>
+        </div>
+        <div>
+            <nav class="social-nav">
+                <a target="_blank" href="https://www.facebook.com">
+                    <img loading="lazy" src="images/facebook-logo.svg" alt="Facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com">
+                    <img loading="lazy" src="images/instagram-logo.png" alt="Instagram">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com">
+                    <img loading="lazy" src="images/linkedin-logo.png" alt="LinkedIn">
+                </a>
+                <a target="_blank" href="https://x.com">
+                    <img loading="lazy" src="images/x-logo.avif" alt="X">
+                </a>
+            </nav>
+        </div>
+        <div class="dev-info">
+            <h3>WDD231 Class Project</h3>
+            <h4>Maximo A. Gomez</h4>
+            <p>&copy; <span id="currentYear"></span> Chambery- Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

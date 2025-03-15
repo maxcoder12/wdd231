@@ -1,0 +1,124 @@
+:root{
+    --primary-color: #2E2E2E;
+    --accent-color: #D72638;
+    --secondary-color: #141414;
+    --secondary-background: #ffffff;
+    --soft-gray: #B0B0B0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    gap: 2em;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
+    padding: 1rem;
+    margin: 0;
+}
+
+#animatedme{
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 1em 0;
+}
+
+#myButton{
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: var(--secondary-background);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+#myButton::before{
+    content: "\2630";
+}
+
+ul.menuLinks li a{
+    display: block;
+    padding: 0.75rem 2vw;
+    color: var(--secondary-background);
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+ul.menuLinks{
+    list-style: none;
+}
+
+#myButton.open::before{
+    content: "x";
+}
+
+nav{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul{
+    overflow: hidden;
+}
+
+nav.open{
+    grid-template-rows: 1fr;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+
+    line-height: 2em;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
+}
+
+.social-nav{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-nav > a{
+    flex: 1;
+    max-width: 50px;
+    margin: 1em;
+}
+
+.social-nav img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.1s ease-in-out;
+
+    border-radius: 40%;
+}
+
+.social-nav img:hover{
+    transform: scale(1.2);
+}

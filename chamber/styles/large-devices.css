@@ -1,0 +1,33 @@
+:root{
+    --primary-color: #2E2E2E;
+    --accent-color: #D72638;
+    --secondary-color: #141414;
+    --secondary-background: #ffffff;
+    --soft-gray: #B0B0B0;
+}
+@media screen and (min-width: 800px){
+
+    #myButton{
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #animatedme{
+        grid-template-rows: 1fr;
+    }
+
+    footer{
+        justify-content: center;
+        gap: 5em;
+        flex-direction: row;
+    }
+
+}
