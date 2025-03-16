@@ -25,6 +25,8 @@
 
     <script src="scripts/smartNav.js" defer></script>
     <script src="scripts/lastModified.js" defer></script>
+    <script src="scripts/displayMembers.js" defer></script>
+    <script src="scripts/mainGrid.js" defer></script>
 
 </head>
 <body>
@@ -36,12 +38,22 @@
 
     <nav id="animatedme">
         <ul class="menuLinks">
-            <li><a href="#" title="Home">Page One</a></li>
-            <li class="current-menu-item"><a href="#">Page Two</a></li>
-            <li><a href="#" title="Service">Page Three</a></li>
-            <li><a href="#" title="History">Page Four</a></li>
+            <li><a href="#" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="#">Business Directory</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+            <li><a href="#" title="Join">Join</a></li>
         </ul>
     </nav>
+
+    <main>
+        <h2>Members</h2>
+        <div>
+            <span id="gridButton">Grid</span>
+            <span id="oneColumn">One Column</span>
+        </div>
+
+        <div id="membersContainer"></div>
+    </main>
 
     <footer>
         <div>
