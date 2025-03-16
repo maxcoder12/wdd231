@@ -98,7 +98,7 @@ main{
     margin: 3em 10%;
 }
 
-main > h2{
+main > h1{
     text-align: center;
     color: var(--secondary-background);
     font-size: 2em;
@@ -128,7 +128,7 @@ main > div > span:hover{
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:780px){
 
     main{
         gap: 1em;
