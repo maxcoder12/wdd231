@@ -4,7 +4,7 @@
       "address": "123 Tech Street, São Paulo, Brazil",
       "phone": "+55 11 98765-4321",
       "website": "https://www.techinnovations.com",
-      "image": "tech-innovations.png",
+      "image": "tech-innovations.webp",
       "membership_level": 3,
       "description": "A leading company in AI and robotics."
     },
@@ -13,7 +13,7 @@
       "address": "456 Solar Ave, Rio de Janeiro, Brazil",
       "phone": "+55 21 99876-5432",
       "website": "http://www.greenenergy.ind.br/",
-      "image": "green-energy.jpg",
+      "image": "green-energy.webp",
       "membership_level": 2,
       "description": "Sustainable energy solutions for the future."
     },
@@ -22,7 +22,7 @@
       "address": "789 Aroma Street, Caracas, Venezuela",
       "phone": "+58 212 555-6789",
       "website": "https://vencoffee.com/",
-      "image": "ven-coffee.png",
+      "image": "ven-coffee.webp",
       "membership_level": 1,
       "description": "Authentic Venezuelan coffee for global markets."
     },
@@ -31,7 +31,7 @@
       "address": "Av. Borges de Medeiros, 4111 - Centro - Gramado - RS",
       "phone": "+55 54 3286-0220",
       "website": "https://www.gramadoinesquecivel.tur.br",
-      "image": "gramado-ine.png",
+      "image": "gramado-ine.webp",
       "membership_level": 3,
       "description": "Check out our themed itineraries and be enchanted by the attractions and interesting places to visit."
     },
@@ -49,7 +49,7 @@
       "address": "654 Ads Street, Belo Horizonte, Brazil",
       "phone": "+55 31 99888-1111",
       "website": "https://www.digimarketing.com",
-      "image": "digital-marketing.jpeg",
+      "image": "digital-marketing.webp",
       "membership_level": 1,
       "description": "Experts in SEO, social media, and branding."
     },
@@ -58,7 +58,7 @@
       "address": "987 Relax Blvd, Florianópolis, Brazil",
       "phone": "+55 48 98765-5555",
       "website": "https://www.wellnesspa.com",
-      "image": "wellness-spa.svg",
+      "image": "wellness-spa.webp",
       "membership_level": 2,
       "description": "Luxury wellness and relaxation center."
     }

@@ -6,19 +6,14 @@ function getMembershipLevel(level){
         default: return "Unknown";
     };
 };
-
-document.addEventListener("DOMContentLoaded", async function (){
+async function displayMembers(){
     memberContainer = document.querySelector("#membersContainer");
-
     try{
         const response = await fetch("data/members.json");
-
         const members = await response.json();
-
         members.forEach(member => {
             const memberCard = document.createElement("div");
             memberCard.classList.add("member-card");
-
             memberCard.innerHTML = `
             <img src="images/${member.image}" alt="${member.name}">
             <h2>${member.name}</h2>
@@ -28,11 +23,11 @@ document.addEventListener("DOMContentLoaded", async function (){
             <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membership_level)}</p>
             <p><strong>Description:</strong> ${member.description}</p>
             `;
-
             memberContainer.appendChild(memberCard);
         });
     } catch (error){
         console.error("Error fetching member data", error);
         memberContainer.innerHTML= "<p>Failed to load member data.</p>";
     };
-});
+};
+displayMembers();

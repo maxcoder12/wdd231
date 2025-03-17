@@ -6,6 +6,7 @@
     --soft-gray: #B0B0B0;
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 header{
+    margin: 0 auto; 
     display: grid;
     grid-template-columns: 44px auto 44px;
     align-items: center;
@@ -28,7 +30,6 @@ header{
     background-color: var(--primary-color);
     color: var(--secondary-background);
     padding: 1rem;
-    margin: 0;
 }
 
 #animatedme{
@@ -151,14 +152,17 @@ main > div > span:hover{
     gap: 2em;
     flex-wrap: wrap;
 
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
 }
 
 
 .member-card{
-    flex-basis: 30%;
+    max-width: 400px;
+    height: 500px;
+
+    align-content: center;
 
     background-color: var(--secondary-background);
 
@@ -176,11 +180,15 @@ main > div > span:hover{
 
 .member-card > img{
     max-width: 200px;
-    max-height: 200px;
 
-    border: 5px solid var(--secondary-color);
     border-radius: 5px;
+    box-sizing: border-box;
+    padding: .1em;
+    margin-bottom: 2em;
+}
 
+.member-card > *{
+    box-sizing: border-box;
 }
 
 footer{
@@ -207,13 +215,13 @@ footer{
 
 .social-nav > a{
     flex: 1;
-    max-width: 50px;
+    width: 50px;
     margin: 1em;
 }
 
 .social-nav img{
-    width: 100%;
-    height: auto;
+    width: 40px;
+    height: 40px;
     transition: transform 0.1s ease-in-out;
 
     border-radius: 40%;
