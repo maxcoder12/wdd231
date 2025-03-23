@@ -251,6 +251,7 @@ nav.open{
     flex-direction: column;
     gap: 1em;
     width: 30%;
+    height: 500px;
 
     margin: 2em 0;
 
@@ -259,6 +260,27 @@ nav.open{
     padding: 3em;
 }
 
+.member-container > div > h3{
+    border-bottom: 3px solid var(--soft-gray);
+    padding-bottom: 1em;
+}
+
+.member-container > div > img{
+    width: 250px;
+    height: 150px;
+    align-self: center;
+}
+
+.weather > img{
+    width: 120px;
+    height: 120px;
+
+    align-self: center;
+}
+
+#threeDaysForecast{
+    display: flex;
+}
 
 .button{
     display: block;

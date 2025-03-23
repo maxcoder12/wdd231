@@ -27,7 +27,7 @@ async function displayMembers(){
         });
     } catch (error){
         console.error("Error fetching member data", error);
-        memberContainer.innerHTML= "<p>Failed to load member data.</p>";
+        memberContainer.innerHTML = "<p>Failed to load member data.</p>";
     };
 };
 displayMembers();

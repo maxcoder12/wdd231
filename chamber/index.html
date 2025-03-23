@@ -22,6 +22,8 @@
     
     <script src="scripts/smartNav.js" defer></script>
     <script src="scripts/lastModified.js" defer></script>
+    <script src="scripts/membersThree.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
@@ -59,19 +61,13 @@
             <article class="weather">
                 <img id="weatherImage" src="" alt="current-weather-image">
                 <h2>Local Weather - Gramado</h2>
-                <span id="currentTemp">Current Temperature</span>
-                <p>Highest: <span id="highestTemp"></span> | Lowest: <span id="lowestTemp"></span></p>
-                <p>Wind <span id="currentWind"></span></p>
-
-                <p><span id="currentDate">[Day, Date]</span> | Updated <span id="updated"></span></p>
-
-                <div id="threeDayForecast">
-                    <h3>Forecast for the Week:</h3>
-                </div>
-
+                <p>Current Temperature: <span id="currentTemp"></span> C°</p>
+                <p>Wind Speed: <span id="currentWind"></span>m/s</p>
+                <p><span id="currentDate"></span> | <span id="updated"></span></p>
+                <h3>Forecast for the Week</h3>
+                <div id="threeDaysForecast"></div>
                 <a target="_blank" class="button" href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/780/gramado-rs">View full forecast</a>                
             </article>
-
         </section>
 
         <section id="currentEvents">
@@ -88,38 +84,8 @@
         
         <section class="three-members">
             <h2>Gold Members</h2>
-            <div class="member-container" id="membersContainer">
-                <div>
-                    <img src="" alt="Image">
-                    <h2>Name</h2>
-                    <span>Address</span>
-                    <span>phone</span>
-                    <span>Description</span>
-                    <a class="button" href="#">Website</a>
-                </div>
-    
-                <div>
-                    <img src="" alt="Image">
-                    <h2>Name</h2>
-                    <span>Address</span>
-                    <span>phone</span>
-                    <span>Description</span>
-                    <a class="button" href="#">Website</a>
-                </div>
-    
-                <div>
-                    <img src="" alt="Image">
-                    <h2>Name</h2>
-                    <span>Address</span>
-                    <span>phone</span>
-                    <span>Description</span>
-                    <a class="button" href="#">Website</a>
-                </div>
-            </div>
+            <div class="member-container" id="membersContainer"></div>
         </section>
-
-        
-
     </main>
 
 
