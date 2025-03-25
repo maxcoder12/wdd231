@@ -27,9 +27,11 @@ function displayResults(data){
     let dailyTemps = {};
     data.list.forEach(entry => {
         let date = entry.dt_txt.split(" ")[0];
-
+        const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        let day = weekDays[new Date(date).getDay()];
+        
         if (!dailyTemps[date]){
-            dailyTemps[date] = {min: entry.main.temp, max: entry.main.temp, image: entry.weather[0].icon};
+            dailyTemps[date] = {day: day, min: entry.main.temp, max: entry.main.temp, image: entry.weather[0].icon};
         } else{
             dailyTemps[date].min = Math.min(dailyTemps[date].min, entry.main.temp);
             dailyTemps[date].max = Math.max(dailyTemps[date].max, entry.main.temp);
@@ -42,20 +44,14 @@ function displayResults(data){
     while(day < threeDays){
         const div = document.createElement("div");
         div.innerHTML = `
+            <span>${dailyTemps[`2025-03-${day}`].day}</span>
             <img src="https://openweathermap.org/img/w/${dailyTemps[`2025-03-${day}`].image}.png">
             <span>Lowest: ${dailyTemps[`2025-03-${day}`].min} C°</span>
             <span>Highest: ${dailyTemps[`2025-03-${day}`].max} C°</span>
         `;
         threeDaysForecast.appendChild(div);
         day++
-    };
-
-
-    console.log(dailyTemps["2025-03-23"]);
-
-
-    console.log(data)
-    
+    };    
 }
 
 async function apiFetch() {

@@ -17,13 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small-devices.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/large-devices.css">
+    <link rel="stylesheet" href="styles/small-devices.css">
     
     <script src="scripts/smartNav.js" defer></script>
     <script src="scripts/lastModified.js" defer></script>
     <script src="scripts/membersThree.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/displayNews.js" defer></script>
 </head>
 <body>
     <header>
@@ -55,7 +57,7 @@
                     <li>Advocacy and support for your industry.</li>
                 </ol>
 
-                <a class="button" href="#">Join</a>
+                <a class="button" href="#">Join Us!</a>
             </article>
 
             <article class="weather">
@@ -73,12 +75,7 @@
         <section id="currentEvents">
             <h2>Current Events</h2>
             <div class="current-events">
-                <span id="leftArrow">⬅</span>
-                <figure>
-                    <img src="images/gramado-medium.webp" alt="">
-                    <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis molestias vero voluptatibus dignissimos natus fuga eaque atque nostrum iure, accusamus, magni, ab dolorem tenetur. Quos doloremque pariatur nostrum sequi autem?</figcaption>
-                </figure>
-                <span id="rightArrow">➡</span>
+                <div id="eventsContainer"></div>
             </div>
         </section>
         

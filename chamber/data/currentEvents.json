@@ -1,0 +1,38 @@
+[
+  {
+      "title": "U.S. bombs over 30 Houthi targets in Yemen",
+      "description": "President Trump ordered airstrikes on the Houthi-held areas in Yemen.",
+      "url": "https://www.nbcnews.com/now/video/u-s-bombs-over-30-houthi-targets-in-yemen-234659909857",
+      "image_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2025_03/1742268891665_now_topstory_trump_airstrikes_houthi_yemen_250317_1920x1080-ovxnjk.jpg",
+      "published_at": "2025-03-18T03:34:59.000000Z",
+      "source": "nbcnews.com",
+      "categories": ["general", "politics"]
+  },
+  {
+      "title": "Parents of missing Pitt student Sudiksha Konanki ask Dominican Republic police to declare her dead",
+      "description": "The family of missing University of Pittsburgh student Sudiksha Konanki have asked police in the Dominican Republic to declare her dead.",
+      "url": "https://www.nbcnews.com/news/us-news/parents-missing-sudiksha-konanki-dominican-republic-declare-dead-rcna196840",
+      "image_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-03/250309-Sudiksha-Konanki-vl-501p-086c0f.jpg",
+      "published_at": "2025-03-18T03:33:35.000000Z",
+      "source": "nbcnews.com",
+      "categories": ["general"]
+  },
+  {
+    "title": "Real Madrid 3-2 Alavés (Sep 24, 2024) Game Analysis",
+    "description": "Expert recap and game analysis of the Real Madrid vs. Alavés Spanish LaLiga game from September 24, 2024 on ESPN.",
+    "url": "https://www.espn.com/soccer/report/_/gameId/704724",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/espn/misc_logos/500/soccer.png",
+    "published_at": "2024-09-25T05:30:26.000000Z",
+    "source": "espn.com",
+    "categories": ["sports", "general"]
+  },
+  {
+    "title": "Israel launches first ground offensive since Gaza ceasefire collapse, partially recapturing key area",
+    "description": "The Israeli military said Wednesday that it had launched 'targeted ground activities' in Gaza, partially recapturing a key area in the territory.",
+    "url": "https://www.cnn.com/2025/03/19/middleeast/israel-ground-offensive-renewed-war-gaza-intl/index.html",
+    "image_url": "https://media.cnn.com/api/v1/images/stellar/prod/2025-03-18t133027z-1991601374-rc2mfda28zbn-rtrmadp-3-israel-palestinians-gaza.JPG?c=16x9&q=w_800,c_fill",
+    "published_at": "2025-03-19T21:03:00Z",
+    "source": "CNN",
+    "categories": ["world"]
+  }
+]
