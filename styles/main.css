@@ -225,6 +225,37 @@ section > h2, article > h2{
     margin: 0px 1em;
 }
 
+@keyframes modal{
+    from{
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.modal{
+    width: 90%;
+    max-width: 500px;
+    height: 400px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    color: var(--secondary-background);
+    animation: modal 1s;
+}
+
+.modal button{
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 1em;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+.modal::backdrop{
+    background-color: var(--primary-color);
+}
+
 .completed-button{
     background-color: var(--secondary-background);
     color: var(--secondary-color);

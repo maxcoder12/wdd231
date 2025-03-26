@@ -86,6 +86,27 @@ const requiredCredits = document.querySelector("#completedCredits");
 
 const coursesList = document.querySelector("#coursesList");
 
+const modal = document.querySelector("#course-details");
+
+function displayCourseDetails(course){
+    modal.innerHTML = ``;
+    modal.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+    `;
+
+    modal.showModal();
+
+    document.querySelector("#closeModal").addEventListener("click", () =>{
+        modal.close();
+    });
+};
+
 allButton.classList.add("completed-button");
 courses.forEach(item =>{
     const li = document.createElement("li");
@@ -96,6 +117,10 @@ courses.forEach(item =>{
 
     li.textContent = name;
     li.id = id;
+
+    li.addEventListener("click", () =>{
+        displayCourseDetails(item);
+    });
  
     if (item.completed === true){
         li.classList.add("completed-button");
