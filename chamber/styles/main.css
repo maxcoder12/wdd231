@@ -76,6 +76,7 @@ nav{
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
+    padding: 1em;
 }
 
 nav ul{
@@ -436,6 +437,181 @@ nav.open{
 
 .member-card > *{
     box-sizing: border-box;
+}
+
+.join-main{
+    background-color: var(--accent-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2em;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:1000px){
+    .join-main{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .join-main > form{
+        flex-basis: 100%;
+    }
+
+    .join-main > section{
+        flex-basis: 100%;
+    }
+}
+
+.join-main h1{
+    flex-basis: 100%;
+    text-align: center;
+    color: var(--secondary-background);
+}
+
+.join-form{
+    flex-basis: 50%;
+    margin: 2em 0;
+    padding: 2em 0;
+
+    background-color: var(--secondary-color);
+    color: var(--secondary-background);
+}
+input, label, textarea, select{
+    border: none;
+}
+
+
+
+.join-form fieldset{
+    margin: 1em 2em;
+
+    border: 3px solid var(--accent-color);
+}
+
+.join-form fieldset > legend{
+    font-size: 1.4em;
+    margin-left: 1em;
+}
+
+.join-form > fieldset > input[type="text"], input[type="tel"], input[type="email"], textarea{
+    display: block;
+    width: 100%;
+    margin: .5em 0;
+    padding: .7em 1em;
+}
+
+.join-form > fieldset > textarea{
+    resize: none;
+}
+
+.join-form > fieldset > input[type="radio"]{
+    display: inline-block;
+    width: 100%;
+}
+
+select{
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    margin: 1em 0;
+    padding: 1em .7em;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 0em 2em ;
+    justify-self: center;
+    padding: 1em;
+
+    background-color: var(--secondary-color);
+    color: var(--secondary-background);
+    border: 3px solid var(--soft-gray);
+    border-bottom: 5px solid var(--accent-color) ;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+}
+
+
+
+.required{
+    border-left: 5px solid var(--accent-color);
+}
+
+.filled{
+    border-left: 5px solid var(--soft-gray);
+}
+
+.membership-level-container{
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: column;    
+    gap: 3em;
+
+    margin: 2em 0;
+    padding: 2em;
+    background-color: var(--secondary-color);
+}
+
+.membership-level-container > h2{
+    text-align: center;
+    font-size: 1.7em;
+    color: var(--secondary-background);
+}
+
+.membership-level-container > article{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--secondary-background);
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+}
+
+.membership-level-container > article > button{
+    max-width: 100%;
+    padding: 1em 2em;
+    margin: 0 auto;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
+    border: none;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+#modal{
+    margin: 6em auto;
+    
+    min-width: 300px;
+    max-width: 700px;
+    height: auto;
+
+    padding: 3em;
+    background-color: var(--secondary-background);
+    border: 5px solid var(--accent-color);
+
+    font-size: 1.3em;
+}
+
+#modal > ul{
+    margin-left: 1em;
+}
+
+::backdrop{
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+.close-modal{
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+
 }
 
 footer{

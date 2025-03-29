@@ -1,0 +1,49 @@
+[
+    {
+      "id": "np_membership",
+      "name": "NP Membership",
+      "description": "A membership level for non-profit organizations. There is no fee for this membership.",
+      "fee": "0",
+      "benefits": [
+        "Access to basic resources",
+        "Networking opportunities with other non-profit organizations",
+        "Eligibility for grant funding"
+      ]
+    },
+    {
+      "id": "bronze_membership",
+      "name": "Bronze Membership",
+      "description": "A basic membership level with a low annual fee.",
+      "fee": "50",
+      "benefits": [
+        "Access to all standard resources",
+        "Discounted event tickets",
+        "Membership certificate"
+      ]
+    },
+    {
+      "id": "silver_membership",
+      "name": "Silver Membership",
+      "description": "A premium membership level with additional perks and services.",
+      "fee": "150",
+      "benefits": [
+        "All benefits of Bronze Membership",
+        "Priority access to events and webinars",
+        "Exclusive Silver Member events",
+        "Advanced training and resources"
+      ]
+    },
+    {
+      "id": "gold_membership",
+      "name": "Gold Membership",
+      "description": "The top membership level offering the most exclusive benefits.",
+      "fee": "300",
+      "benefits": [
+        "All benefits of Silver Membership",
+        "Personalized consulting services",
+        "Featured spotlight in the member directory",
+        "Free access to all events and webinars",
+        "Access to a private networking group"
+      ]
+    }
+]

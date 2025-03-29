@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maximo A Gomez">
+    <meta name="description" content="A directory page of a chamber of commerce to provido some useful info about the business">
+    <title>Join | Chambery</title>
+    <meta property="og:title" content="WDD 231 Home Page Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/gramado-medium.webp">
+    <meta property="og:url" content="https://maxcoder12.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large-devices.css">
+    <link rel="stylesheet" href="styles/small-devices.css">
+    
+    <script src="scripts/smart-nav.js" defer></script>
+    <script src="scripts/last-modified.js" defer></script>
+    <script src="scripts/membership-level.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="company logo" width="40"  height="40">
+        <h2>Chambery</h2>
+        <span id="myButton"></span>
+    </header>
+    <nav id="animatedme">
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+            <li  class="current-menu-item"><a href="#" title="Join">Join</a></li>
+        </ul>
+    </nav>
+
+    <dialog id="modal"></dialog>
+    <main class="join-main">
+        <h1>Join Us!</h1>
+        <form class="join-form" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant's Information</legend>
+
+                <label for="first_name">First Name:</label>
+                <input class="required" required title="Applicant's first name" name="first_name" id="first_name" type="text" autocomplete="given-name" placeholder="Richards">
+
+                <label for="last_name">Last Name:</label>
+                <input class="required" required title="Applicant's last name" name="last_name" id="last_name" type="text" autocomplete="family-name" placeholder="Smith">
+
+                <label for="email">Email: </label>
+                <input class="required" required title="Applicant's email address" name="email" id="email" type="email" autocomplete="email" placeholder="example@hotmail.com">
+
+                <label for="phone">Phone Number:</label>
+                <input class="filled" required title="Applicant's mobile phone" name="phone" id="phone" type="tel" placeholder="+55 (54) 5698-1254">
+
+                <label for="org_title">Organizational Title</label>
+                <input class="required" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title" title="Applicant's Organizational Title" name="org_title" id="org_title" type="text" placeholder="e.g Executive Director">
+            </fieldset>
+            <fieldset>
+                <legend>Organization's Information</legend>
+
+                <label for="org_name">Business/Organization Name:</label>
+                <input class="required" required autocomplete="organization" type="text" id="org_name" name="org_name" title="Business/Organization's Name" placeholder="Chambery - Chamber of Commerce">
+
+                <label for="membership_level">Membership Level:</label>
+                <select class="required" name="membership_level" id="membership_level">
+                    <option value="" disabled selected>Select one level...</option>
+                    <option value="np_membership">NP Membership</option>
+                    <option value="bronze_membership">Bronze Membership</option>
+                    <option value="silver_membership">Silver Membership</option>
+                    <option value="Gold_membership">Gold Membership</option>
+                </select>
+
+                <label for="org_desc">Business/Organization's Description:</label>
+                <textarea  class="required" title="Business/Organization's Description" rows="5" cols="4" name="org_desc" id="org_desc" placeholder="Describe your organization..."></textarea>
+
+                <input hidden id="timestamp" name="timestamp" type="datetime-local" value="user_date">
+            </fieldset>
+
+            <input type="submit" value="Join to Chambery">
+        </form>
+
+        <section id="membership-level-container" class="membership-level-container">
+            <h2>Membership Levels</h2>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div>
+            <h3>Chambery - Chamber of Commerce</h3>
+            <p>Av. Getuli, 510 - Gramado, RS</p>
+            <p>Cham@chambery.org</p>
+            <p>(54) 2254-6565</p>
+        </div>
+        <div>
+            <div class="social-nav">
+                <a target="_blank" href="https://www.facebook.com">
+                    <img loading="lazy" src="images/facebook-logo.svg" alt="Facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com">
+                    <img loading="lazy" src="images/instagram-logo.webp" alt="Instagram">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com">
+                    <img loading="lazy" src="images/linkedin-logo.webp" alt="LinkedIn">
+                </a>
+                <a target="_blank" href="https://x.com">
+                    <img loading="lazy" src="images/x-logo.avif" alt="X">
+                </a>
+            </div>
+        </div>
+        <div class="dev-info">
+            <h3>WDD231 Class Project</h3>
+            <h4>Maximo A. Gomez</h4>
+            <p>&copy; <span id="currentYear"></span> Chambery- Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
