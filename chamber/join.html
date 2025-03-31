@@ -24,6 +24,7 @@
     <script src="scripts/smart-nav.js" defer></script>
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/membership-level.js" defer></script>
+    <script src="scripts/valid-form.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,24 +44,24 @@
     <dialog id="modal"></dialog>
     <main class="join-main">
         <h1>Join Us!</h1>
-        <form class="join-form" method="get" action="thankyou.html">
+        <form id="my-form" class="join-form" method="get" action="thankyou.html">
             <fieldset>
                 <legend>Applicant's Information</legend>
 
                 <label for="first_name">First Name:</label>
-                <input class="required" required title="Applicant's first name" name="first_name" id="first_name" type="text" autocomplete="given-name" placeholder="Richards">
+                <input class="required"  required title="Applicant's first name" name="first_name" id="first_name" type="text" autocomplete="given-name" placeholder="Richards">
 
                 <label for="last_name">Last Name:</label>
-                <input class="required" required title="Applicant's last name" name="last_name" id="last_name" type="text" autocomplete="family-name" placeholder="Smith">
+                <input class="required"  required title="Applicant's last name" name="last_name" id="last_name" type="text" autocomplete="family-name" placeholder="Smith">
 
                 <label for="email">Email: </label>
-                <input class="required" required title="Applicant's email address" name="email" id="email" type="email" autocomplete="email" placeholder="example@hotmail.com">
+                <input class="required"  required title="Applicant's email address" name="email" id="email" type="email" autocomplete="email" placeholder="example@hotmail.com">
 
                 <label for="phone">Phone Number:</label>
-                <input class="filled" required title="Applicant's mobile phone" name="phone" id="phone" type="tel" placeholder="+55 (54) 5698-1254">
+                <input class="required"  required title="Applicant's mobile phone" name="phone" id="phone" type="tel" placeholder="+55 (54) 5698-1254">
 
                 <label for="org_title">Organizational Title</label>
-                <input class="required" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title" title="Applicant's Organizational Title" name="org_title" id="org_title" type="text" placeholder="e.g Executive Director">
+                <input class="filled" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title" title="Applicant's Organizational Title" name="org_title" id="org_title" type="text" placeholder="e.g Executive Director">
             </fieldset>
             <fieldset>
                 <legend>Organization's Information</legend>
@@ -78,12 +79,12 @@
                 </select>
 
                 <label for="org_desc">Business/Organization's Description:</label>
-                <textarea  class="required" title="Business/Organization's Description" rows="5" cols="4" name="org_desc" id="org_desc" placeholder="Describe your organization..."></textarea>
+                <textarea class="filled" title="Business/Organization's Description" rows="5" cols="4" name="org_desc" id="org_desc" placeholder="Describe your organization..."></textarea>
 
-                <input hidden id="timestamp" name="timestamp" type="datetime-local" value="user_date">
+                <input id="timestamp" name="timestamp" type="datetime">
             </fieldset>
 
-            <input type="submit" value="Join to Chambery">
+            <input id="submit" type="submit" value="Join to Chambery">
         </form>
 
         <section id="membership-level-container" class="membership-level-container">

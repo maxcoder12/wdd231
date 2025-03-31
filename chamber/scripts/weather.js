@@ -39,15 +39,18 @@ function displayResults(data){
     });
 
     let day = new Date().getDate()
+    let month = new Date().getMonth() + 1;
     let threeDays = day + 3;
+
+    console.log(month);
 
     while(day < threeDays){
         const div = document.createElement("div");
         div.innerHTML = `
-            <span>${dailyTemps[`2025-03-${day}`].day}</span>
-            <img src="https://openweathermap.org/img/w/${dailyTemps[`2025-03-${day}`].image}.png">
-            <span>Lowest: ${dailyTemps[`2025-03-${day}`].min} C°</span>
-            <span>Highest: ${dailyTemps[`2025-03-${day}`].max} C°</span>
+            <span>${dailyTemps[`2025-0${month}-${day}`].day}</span>
+            <img src="https://openweathermap.org/img/w/${dailyTemps[`2025-0${month}-${day}`].image}.png">
+            <span>Lowest: ${dailyTemps[`2025-0${month}-${day}`].min} C°</span>
+            <span>Highest: ${dailyTemps[`2025-0${month}-${day}`].max} C°</span>
         `;
         threeDaysForecast.appendChild(div);
         day++

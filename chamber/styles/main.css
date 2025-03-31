@@ -6,6 +6,9 @@
     --soft-gray: #B0B0B0;
 }
 
+html, body{
+    overflow-x: hidden;
+}
 
 *{
     margin: 0;
@@ -511,6 +514,10 @@ input, label, textarea, select{
     width: 100%;
 }
 
+input[type="datetime"]{
+    display: none;
+}
+
 select{
     display: block;
     width: 200px;
@@ -531,6 +538,11 @@ input[type="submit"]{
     border-bottom: 5px solid var(--accent-color) ;
     border-radius: 3px 3px 0 0;
     cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--secondary-background);
+    color: var(--secondary-color);
 }
 
 
@@ -579,8 +591,14 @@ input[type="submit"]{
 
     background-color: var(--primary-color);
     color: var(--secondary-background);
-    border: none;
+    border: 3px solid transparent;
     border-bottom: 3px solid var(--accent-color);
+}
+
+.membership-level-container > article > button:hover{
+    background-color: var(--secondary-background);
+    color: var(--secondary-color);
+    border: 3px solid var(--accent-color);
 }
 
 #modal{
@@ -597,21 +615,56 @@ input[type="submit"]{
     font-size: 1.3em;
 }
 
+#modal > h2{
+    margin-bottom: 1em;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+#modal > p{
+    margin-bottom: 1em;
+}
+
 #modal > ul{
+    margin-top: 1em;
     margin-left: 1em;
+    line-height: 1.5em;
 }
 
 ::backdrop{
     background-color: rgb(0 0 0 / 0.5);
 }
 
-.close-modal{
+#modal > button{
+    display: block;
     position: absolute;
     top: 23px;
     right: 23px;
-    padding: .5rem 1rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: .5rem;
+    border: 3px solid rgb(0 0 0 / 0.1);
 
+}
+
+.thank-page{
+    min-width: 320px;
+    max-width: 700px;
+    height: auto;
+
+    margin: 6em auto;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    justify-content: center;
+
+    line-height: 2em;
+
+    font-size: 1.4em;
+
+    background-color: var(--secondary-color);
+    color: var(--secondary-background);
+    border: 3px solid var(--accent-color);
 }
 
 footer{
@@ -626,7 +679,7 @@ footer{
     background-color: var(--primary-color);
     color: var(--secondary-background);
 
-    padding: 1.5em 0;
+    padding: 1.5em  .3em;
 }
 
 .social-nav{

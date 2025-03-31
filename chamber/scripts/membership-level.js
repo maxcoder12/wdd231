@@ -1,16 +1,11 @@
 const membershipLevels = document.querySelector("#membership-level-container");
 
+
+
 const modal = document.querySelector("#modal")
 function displayModal(membership){
 
     modal.innerHTML = ` `;
-
-    const closeBut = document.createElement("button");
-    closeBut.classList.add = "close-modal";
-    closeBut.textContent = "❌";
-    closeBut.addEventListener("click", () =>{
-        modal.close();
-    });
 
     const h2 = document.createElement("h2");
     h2.textContent = membership.name;
@@ -21,6 +16,10 @@ function displayModal(membership){
     const pPri = document.createElement("p");
     pPri.textContent = `Fee: $${membership.fee}`;
 
+
+    const h3 = document.createElement("h3");
+    h3.textContent = "Benefits: "
+
     const benefitList = document.createElement("ul");
     membership.benefits.forEach(benefit => {
         const li = document.createElement("li");
@@ -29,9 +28,20 @@ function displayModal(membership){
         benefitList.appendChild(li);
     });
 
+    const closeBut = document.createElement("button");
+
+    closeBut.classList.add("close-modal");
+    closeBut.textContent = "❌";
+    closeBut.addEventListener("click", () =>{
+        modal.close();
+    });
+
+    modal.appendChild(closeBut);
+
     modal.appendChild(h2);
     modal.appendChild(pDes);
     modal.appendChild(pPri);
+    modal.appendChild(h3);
     modal.appendChild(benefitList);
 
     modal.showModal();
@@ -51,7 +61,7 @@ function displayMemberships(data) {
         button.addEventListener("click", () =>{
             displayModal(membership);
         });
-
+        
         article.appendChild(h3);
         article.appendChild(button);
 

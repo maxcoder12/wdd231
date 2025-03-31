@@ -1,4 +1,11 @@
 @media screen and (max-width:900px){
+
+    main, body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     .join-weather{
         width: 100%;
         margin: 0 auto;
@@ -48,6 +55,18 @@
         max-width: 70%;
         height: auto;
         align-self: center;
+    }
+
+    fieldset > legend{
+        text-align: center;
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    footer{
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
     }
 
 }
