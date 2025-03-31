@@ -49,26 +49,28 @@ function displayModal(membership){
 }
 
 function displayMemberships(data) {
-    data.forEach(membership => {
-        const article = document.createElement("article");
+    data.forEach((membership, index) => {
+        setTimeout(()=>{
+            const article = document.createElement("article");
+            article.style.animation = "displayMembership .5s linear";
 
-        const h3 = document.createElement("h2");
-        h3.textContent = membership.name;
+            const h3 = document.createElement("h2");
+            h3.textContent = membership.name;
 
-        const button = document.createElement("button");
-        button.textContent = "Learn More";
+            const button = document.createElement("button");
+            button.textContent = "Learn More";
 
-        button.addEventListener("click", () =>{
-            displayModal(membership);
-        });
-        
-        article.appendChild(h3);
-        article.appendChild(button);
+            button.addEventListener("click", () =>{
+                displayModal(membership);
+            });
 
-        membershipLevels.appendChild(article);
+            article.appendChild(h3);
+            article.appendChild(button);
+
+            membershipLevels.appendChild(article);
+        }, index * 500);
     });
-    
-} 
+}
 
 async function fetchData(){
     try{
