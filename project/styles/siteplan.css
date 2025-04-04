@@ -19,7 +19,7 @@ body{
 }
 
 main{
-    width: 80%;
+    max-width: 70%;
     margin: 0 auto;
 
     background-color: var(--background-color);
@@ -44,7 +44,12 @@ h1{
 }
 
 section{
-    padding: 0 1.5em;
+    padding: 1em 1.5em;
+}
+
+iframe{
+    width: 50%;
+    height: 600px;
 }
 
 p, ul, figcaption{
