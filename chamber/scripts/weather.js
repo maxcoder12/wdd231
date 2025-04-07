@@ -39,12 +39,16 @@ function displayResults(data){
     });
 
     let day = new Date().getDate()
+    
     let month = new Date().getMonth() + 1;
-    let threeDays = day + 3;
+    
+    let i = 0;
 
-    console.log(month);
-
-    while(day < threeDays){
+    while(i < 3){
+        day = `${day}`;
+        if (day.length == 1){
+            day = "0" + day;
+        }
         const div = document.createElement("div");
         div.innerHTML = `
             <span>${dailyTemps[`2025-0${month}-${day}`].day}</span>
@@ -53,7 +57,9 @@ function displayResults(data){
             <span>Highest: ${dailyTemps[`2025-0${month}-${day}`].max} C°</span>
         `;
         threeDaysForecast.appendChild(div);
-        day++
+        day = parseInt(day);
+        day++;
+        i++;
     };    
 }
 
