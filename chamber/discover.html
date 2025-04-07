@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maximo A Gomez">
+    <meta name="description" content="Come here and discover some of the beauty and funnies places of Gramado.">
+    <title>Discover | Chambery</title>
+    <meta property="og:title" content="WDD 231 Home Page Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/gramado-medium.webp">
+    <meta property="og:url" content="https://maxcoder12.github.io/wdd231/chamber/join.html">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/small-devices.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large-devices.css">
+    
+    <script src="scripts/smart-nav.js" defer></script>
+    <script src="scripts/last-modified.js" defer></script>
+    <script src="scripts/discover-items.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="company logo" width="40"  height="40">
+        <h2>Chambery</h2>
+        <span id="myButton"></span>
+    </header>
+    <nav id="animatedme">
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li class="current-menu-item"><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="join.html" title="Join">Join</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="discover">
+        <aside id="visit-message"></aside>
+        <section class="discover-grid" id="cards-container">
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Chambery - Chamber of Commerce</h3>
+            <p>Av. Getuli, 510 - Gramado, RS</p>
+            <p>Cham@chambery.org</p>
+            <p>(54) 2254-6565</p>
+        </div>
+        <div>
+            <div class="social-nav">
+                <a target="_blank" href="https://www.facebook.com">
+                    <img loading="lazy" src="images/facebook-logo.svg" alt="Facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com">
+                    <img loading="lazy" src="images/instagram-logo.webp" alt="Instagram">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com">
+                    <img loading="lazy" src="images/linkedin-logo.webp" alt="LinkedIn">
+                </a>
+                <a target="_blank" href="https://x.com">
+                    <img loading="lazy" src="images/x-logo.avif" alt="X">
+                </a>
+            </div>
+        </div>
+        <div class="dev-info">
+            <h3>WDD231 Class Project</h3>
+            <h4>Maximo A. Gomez</h4>
+            <p>&copy; <span id="currentYear"></span> Chambery- Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

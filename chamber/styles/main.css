@@ -679,6 +679,70 @@ input[type="submit"]:hover{
     border: 3px solid var(--accent-color);
 }
 
+.discover{
+    max-width: 100%;
+    margin: 2em auto;
+}
+
+#visit-message{
+    max-width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
+    padding: 2em;
+    justify-self: center;
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+.discover-grid div{
+    max-width: 1100px;
+    margin: 2rem auto;
+    border: 1px solid var(--accent-color);
+    background-color: var(--secondary-background);
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "photograph name"
+    "photograph description"
+    "photograph location"
+    "photograph button"
+}
+
+
+.discover-grid div h2{
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+.discover-grid div figure{
+    max-width: 500px;
+    height: 300px;
+    grid-area: photograph;
+}
+
+.discover-grid div img{
+    max-width: 500px;
+    height: 300px;
+}
+
+.discover-grid div p{
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.discover-grid div address{
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+.discover-grid div button{
+    margin: 1rem 10px;
+    grid-area: button;
+}
+
 footer{
     display: flex;
     justify-content: space-around;

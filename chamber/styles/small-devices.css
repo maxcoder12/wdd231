@@ -1,4 +1,4 @@
-@media screen and (max-width:900px){
+@media screen and (max-width:800px){
 
     main, body{
         margin: 0;
@@ -61,6 +61,44 @@
         text-align: center;
         margin-left: 0px;
         padding: 0px;
+    }
+
+    .discover{
+        width: 100%;
+    }
+
+    .discover-grid{
+        width: 100%;
+    }
+
+    .discover-grid div{
+        max-width: 500px;
+        margin: 1rem auto;
+        border: 1px solid var(--accent-color);
+        background-color: var(--secondary-background);
+        border-radius: 10px;
+        overflow: hidden;
+    
+        display: grid;
+        grid-template-areas: 
+        "name"
+        "description"
+        "photograph"
+        "location"
+        "button";
+
+        justify-content: center;
+    }
+
+    .discover-grid div figure{
+        max-width: 100%;
+        height: auto;
+        grid-area: photograph;
+    }
+    
+    .discover-grid div img{
+        max-width: 100%;
+        height: auto;
     }
 
     footer{

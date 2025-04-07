@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mini Mundo",
+    "address": "Rua Horácio Cardoso, 291 - Planalto, Gramado - RS",
+    "description": "Mini Mundo is a charming open-air museum featuring detailed miniature replicas of famous buildings from around the world. Built at a 1:24 scale, the park includes railways, castles, and tiny cities, all surrounded by lush gardens. It's a magical experience for families and architecture lovers alike.",
+    "image": "images/minimundo.webp"
+  },
+  {
+    "name": "Covered Street (Rua Coberta)",
+    "address": "Av. Borges de Medeiros, Centro, Gramado - RS",
+    "description": "Rua Coberta is one of the most iconic spots in Gramado. This glass-roofed street is lined with cafes, boutiques, and gourmet restaurants. It's a popular destination for festivals, musical performances, and holiday decorations, especially during the famous Natal Luz season.",
+    "image": "images/ruacoberta.webp"
+  },
+  {
+    "name": "Black Lake (Lago Negro)",
+    "address": "Rua A. J. Renner - Planalto, Gramado - RS",
+    "description": "Black Lake is a peaceful and picturesque spot perfect for nature lovers. Surrounded by tall pine trees imported from Germany and vibrant hydrangeas, the lake offers paddle boat rides and walking trails, making it ideal for a romantic stroll or a family picnic.",
+    "image": "images/lagonegro.webp"
+  },
+  {
+    "name": "Snowland",
+    "address": "RS-235, 9009 - Carazal, Gramado - RS",
+    "description": "Snowland is the first indoor snow park in the Americas, offering year-round snowy adventures. Visitors can ski, snowboard, or simply enjoy a snowball fight. With themed restaurants and a mountain village atmosphere, it's a thrilling experience in a tropical country.",
+    "image": "images/snowland.webp"
+  },
+  {
+    "name": "Le Jardin Lavender Park",
+    "address": "Rua Vinte e Cinco de Julho, 704 - Linha 40, Gramado - RS",
+    "description": "Le Jardin is a stunning park dedicated to the beauty and fragrance of lavender. Featuring manicured gardens, greenhouses, and a charming boutique, it’s the perfect escape into nature’s tranquility. Visitors can also buy handmade soaps, oils, and herbal teas.",
+    "image": "images/lejardin.webp"
+  },
+  {
+    "name": "Gramado Crystals (Cristais de Gramado)",
+    "address": "RS-115, 36161 - Várzea Grande, Gramado - RS",
+    "description": "Cristais de Gramado showcases the fascinating art of glassblowing. Visitors can watch live demonstrations of artisans crafting elegant crystal pieces and explore an on-site shop filled with beautiful souvenirs. The experience combines art, culture, and tradition.",
+    "image": "images/cristais.webp"
+  },
+  {
+    "name": "Santa Claus Village (Aldeia do Papai Noel)",
+    "address": "Rua Bela Vista, 353 - Centro, Gramado - RS",
+    "description": "This year-round Christmas village brings holiday magic to life. Featuring Santa’s house, sleigh rides, and themed attractions, Aldeia do Papai Noel is a dream destination for children and the young at heart. The scenic overlook offers breathtaking views of the valley below.",
+    "image": "images/papainoel.webp"
+  },
+  {
+    "name": "Gramado Film Festival Museum (Palácio dos Festivais)",
+    "address": "Av. Borges de Medeiros, 2659 - Centro, Gramado - RS",
+    "description": "Home to the renowned Gramado Film Festival, this museum celebrates Latin American cinema with interactive exhibits, costumes, and film history. The Palácio dos Festivais also serves as a cinema and cultural venue, attracting movie buffs from all over the continent.",
+    "image": "images/museucinema.webp"
+  }
+]
