@@ -32,15 +32,21 @@ displayMessage();
 function displayItems(data){
     data.forEach(item => {
         const div = document.createElement("div");
+        const button = document.createElement("button");
+        button.classList.add("button-learn");
+        button.textContent = "Learn More";
+        button.addEventListener("click", () =>{
+            window.location.href = `${item.website}`;
+        });
         div.innerHTML = `
         <figure>
-            <img src="${item.image}">
+            <img alt="${item.name}" loading="lazy" src="${item.image}">
         </figure>
         <h2>${item.name}</h2>
         <address>${item.address}</address>
         <p>${item.description}</p>
-        <a class="button-learn" href="${item.website}" target="_blank">Learn More</a> 
         `;
+        div.appendChild(button);
         cardsContainer.appendChild(div);
     });
 }
