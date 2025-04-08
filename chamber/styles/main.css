@@ -746,19 +746,21 @@ input[type="submit"]:hover{
 }
 
 .discover-grid div figure{
+    min-width: 300px;
     max-width: 500px;
     height: 300px;
     grid-area: photograph;
 }
 
-.discover-grid div img{
+.discover-grid > div > figure > img{
+    min-width: 300px;
     max-width: 500px;
     height: 300px;
     background-color: var(--secondary-color);
     transition: padding .3s ease;
 }
 
-.discover-grid div img:hover{
+.discover-grid > div > figure  > img:hover{
     padding: .7em;
 }
 
