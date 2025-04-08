@@ -688,6 +688,10 @@ input[type="submit"]:hover{
     margin: 2em auto;
 }
 
+.discover h1{
+    text-align: center;
+}
+
 .button-learn{
     text-align: center;
     padding: .8em 1em;
