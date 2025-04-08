@@ -1,6 +1,6 @@
 const cardsContainer = document.querySelector("#cards-container");
 const visit = document.querySelector("#visit-message");
-
+const modal = document.querySelector("#modal");
 
 
 function displayMessage(){
@@ -39,7 +39,7 @@ function displayItems(data){
         <h2>${item.name}</h2>
         <address>${item.address}</address>
         <p>${item.description}</p>
-        <button class="button">Learn More</button> 
+        <a class="button-learn" href="${item.website}" target="_blank">Learn More</a> 
         `;
         cardsContainer.appendChild(div);
     });

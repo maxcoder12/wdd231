@@ -38,6 +38,10 @@
         padding: 1em;
     }
 
+    .discover-grid div figure img:hover{
+        padding: .5em;
+    }
+
     
 
     footer{

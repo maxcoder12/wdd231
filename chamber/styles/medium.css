@@ -29,5 +29,8 @@
         max-width: 350px;
         height: 100%;
     }
+    .discover-grid div figure img:hover{
+        padding: .5em;
+    }
     
 }
