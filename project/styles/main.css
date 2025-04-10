@@ -1,0 +1,259 @@
+:root{
+    --primary-color: #8b1a1a;
+    --secondary-color: #ffd469;
+    --background-color:#FFFFFF ;
+    --text-color: #000000;
+    --accent-color: #1b531e;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+main{
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 300px ;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+button, em, b{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+address{
+    font-style: italic;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 2em;
+    font-size: 1.2em;
+
+    background-color: var(--background-color);
+
+
+    box-shadow: 0px 15px 10px 0 var(--text-color);
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    margin: 0 .3em;
+    padding: 1em 1.2em;
+    text-decoration: none;
+    transition: transform .1s ease;
+    color: var(--text-color);
+}
+
+nav a:hover{
+    border-bottom: 3px solid var(--accent-color);
+    transform: scale(1.1);
+}
+
+.current-page{
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.slogan{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    font-size: 2.6em;
+    line-height: 1.5em;
+}
+
+.hero{
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 900px;
+
+}
+
+.hero > img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 900px;
+}
+
+.carrousel{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 80%;
+    height: auto;
+    padding: 2em;
+    margin: 0 auto;
+    transform: translateY(25%);
+}
+
+.carrousel > h2{
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 1em;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+.promotions{
+    box-sizing: border-box;
+    margin: 2em auto;
+    padding: 1em;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+#promotions-container{
+    display: grid;
+    grid-template-areas: 
+    "image div";
+}
+#promotions-container > figure{
+    width: 400px;
+    grid-area: image;
+}
+#promotions-container > figure > img{
+    width: 100%;
+}
+#promotions-container > div{
+    grid-area: div;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1.3em;
+}
+
+.about{
+    margin: 3em;
+    display: flex;
+    gap: 4em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about > h2{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.about > div{
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.about > div > img{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 1em;
+}
+
+.green-button{
+    display: block;
+    text-align: center;
+
+    padding: 1.5em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.reviews{
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 2em;
+}
+
+.reviews > h2{
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    font-size: 1.8em;
+}
+
+#reviews-container{
+    display: flex;
+    gap: 3em;
+}
+
+#reviews-container > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: justify;
+    padding: 2em;
+}
+
+#reviews-container > div:nth-child(even){
+   border-left: 3px solid var(--background-color) ;
+   border-right: 3px solid var(--background-color) ;
+}
+
+.offers{
+    padding: 2em;
+}
+
+.offers > h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.offers > div:nth-child(odd){
+    display: grid;
+
+    margin: 1em;
+    padding: 1em;
+    border-right: 5px solid var(--primary-color);
+
+    grid-template-areas:
+    "image div";
+
+    
+}
+
+.offers > div:nth-child(even){
+    display: grid;
+
+    margin: 1em;
+    padding: 1em;
+    border-left: 5px solid var(--primary-color);
+
+    grid-template-areas:
+    "div image";
+}
+
+.offers > div > div{
+    grid-area: div;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    margin: 0 2em;
+}
