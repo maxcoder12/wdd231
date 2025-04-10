@@ -257,3 +257,32 @@ nav a:hover{
     justify-content: center;
     margin: 0 2em;
 }
+
+footer{
+    display: flex;
+    gap: 3em;
+    justify-content: space-around;
+    padding: 3em 10%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    line-height: 2em;
+
+}
+
+footer > div:nth-child(2){
+    align-self: center;
+    text-align: center;
+}
+
+footer > div:nth-child(2) > div > a > img{
+    width: 50px;
+    height: 46px;
+    margin: 1em;
+    border-radius: 50%;
+
+    transition: transform .1s linear;
+}
+
+footer > div:nth-child(2) > div > a > img:hover{
+    transform: scale(1.1);
+}
