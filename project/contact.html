@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maximo A. Gomez">
+    <meta name="description" content="The contact page of FlavorBites a company that seeks to offer the ebst food service in all this region!">
+    <title>FlavorBites | Contact Page</title>
+    <meta property="og:title" content="FlavorBites | Contact Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/gramado-medium.webp">
+    <meta property="og:url" content="https://maxcoder12.github.io/wdd231/project/index.html">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+    <header>
+        <h2>FlavorBites</h2>
+        <nav>
+            <a title="home" href="index.html">Home</a>
+            <a title="menu" href="menu.html">Menu</a>
+            <a title="order" href="order.html">Order</a>
+            <a class="current-page" title="contact" href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="contactForm" action="sent.html" method="get" class="wf1">
+            <h2>Contact us!</h2>
+                        
+            <fieldset>
+                <legend>Personal information</legend>
+
+                <label for="userName">Name:</label>
+                <input placeholder="Luke Gavin..." type="text" id="userName" name="userName" required>
+
+                <label for="email">Email:</label>
+                <input placeholder="lgavin@mail.com" type="email" id="email" name="email" required>
+
+                <label for="phone">Phone number: <span>(optional)</span></label>
+                <input name="phone" id="phone" placeholder="+55 (54) 15245-5458" type="tel">
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Leave a Message</legend>
+
+                <label for="message">Message:</label>
+                <textarea placeholder="Hello! how are yo..." id="message" name="message" rows="4" required></textarea>
+
+                <label><input type="checkbox" name="contactMethod" value="email" required> Contact me via email</label>
+                <label><input type="checkbox" name="contactMethod" value="phone"> Contact me via phone <span> (optional)</span></label>
+
+            </fieldset>
+            <input type="submit" value="Send message">
+
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <p>FLAVOR BITES - FOOD COMPANY</p>
+            <p>Av. Florenzi, 560 - Gramado, RS</p>
+            <p>flavbit@flav.org</p>
+            <p>(54) 2198-3487</p>
+        </div>
+
+        <div>
+            <h3>Follow our Media!</h3>
+            <div>
+                <a href="#"><img width="40" height="36" src="images/lejardin.jpg" alt=""></a>
+                <a href="#"><img width="40" height="36" src="images/lejardin.jpg" alt=""></a>
+                <a href="#"><img width="40" height="36" src="images/lejardin.jpg" alt=""></a>
+                <a href="#"><img width="40" height="36" src="images/lejardin.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Maximo A. Gomez</p>
+            <p>© 2025 FLAVOR BITES - FOOD COMPANY</p>
+            <p>Last Modification: 03/31/2025 12:12:48</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maximo A. Gomez">
+    <meta name="description" content="The order page of FlavorBites a company that seeks to offer the ebst food service in all this region!">
+    <title>FlavorBites | Order Page</title>
+    <meta property="og:title" content="FlavorBites | Order Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/gramado-medium.webp">
+    <meta property="og:url" content="https://maxcoder12.github.io/wdd231/project/index.html">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+    <header>
+        <h2>FlavorBites</h2>
+        <nav>
+            <a title="home" href="index.html">Home</a>
+            <a title="menu" href="menu.html">Menu</a>
+            <a class="current-page" title="order" href="#">Order</a>
+            <a title="contact" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="order-container">
+        <h2>Place Your Order</h2>
+    
+        <form id="order-form">
+        <fieldset>
+            <legend>Choose Your Items</legend>
+            <label><input type="checkbox" name="items" value="Bruschetta">
+            Bruschetta ($5.99)</label>
+            <br>
+            <label><input type="checkbox" name="items" value="Grilled Salmon">
+            Grilled Salmon ($14.99)</label>
+            <br>
+            <label><input type="checkbox" name="items" value="Classic Burger">
+            Classic Burger ($11.99)</label>
+            <br>
+            <label><input type="checkbox" name="items" value="Tiramisu">
+            Tiramisu ($5.49)</label>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Your Information</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" name="address" required>
+    
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+    
+        <button type="submit">Place Order</button>
+        </form>
+    
+        <div id="confirmation" style="display: none;">
+        <h3>Thank you!</h3>
+        <p>Your order has been received. We’ll deliver it shortly 🚚🍽️</p>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>FLAVOR BITES - FOOD COMPANY</p>
+            <p>Av. Florenzi, 560 - Gramado, RS</p>
+            <p>flavbit@flav.org</p>
+            <p>(54) 2198-3487</p>
+        </div>
+
+        <div>
+            <h3>Follow our Media!</h3>
+            <div>
+                <a href="#"><img width="40" height="36" src="images/lejardin.jpg" alt=""></a>
+                <a href="#"><img width="40" height="36" src="images/lejardin.jpg" alt=""></a>
+                <a href="#"><img width="40" height="36" src="images/lejardin.jpg" alt=""></a>
+                <a href="#"><img width="40" height="36" src="images/lejardin.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Maximo A. Gomez</p>
+            <p>© 2025 FLAVOR BITES - FOOD COMPANY</p>
+            <p>Last Modification: 03/31/2025 12:12:48</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
