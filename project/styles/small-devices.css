@@ -1,0 +1,255 @@
+@media screen and (max-width:500px){
+	header{
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	z-index: 6;
+	
+    	display: flex;
+    	flex-wrap: wrap;
+    	width: 100%;
+    	justify-content: space-between;
+    	align-items: center;
+    	padding: 1em 2em;
+    	font-size: 1.2em;
+    	box-sizing: border-box;
+	
+    	background-color: var(--background-color);
+	
+	
+    	box-shadow: 0px 15px 10px 0 var(--text-color);
+	}
+	
+	#showMenu{
+	  display: block;
+	  font-size: 1.5em
+	}
+	
+	nav{
+	    display: none;
+	    flex-basis: 100%;
+	    flex-direction: column;
+	    z-index: -1;
+	    transition: grid-template-rows .3s ease;
+	    grid-template-rows: 0 0 0;
+	}
+	nav a{
+	    margin: 0 .3em;
+	    padding: 1em 1.2em;
+	    text-decoration: none;
+	    color: var(--text-color);
+	}
+	
+	nav a:hover{
+	    border-bottom: 3px solid var(--accent-color);
+	    transform: none;
+	}
+
+	.slogan{
+	    text-align: center;
+	    margin-top: 0em;
+	    margin-bottom: 0em;
+	    font-size: 1.7em;
+	    line-height: 1.5em;
+	    max-width: 500px;
+	}
+
+	body, main{
+    	max-width: 100%;
+    	margin: 0;
+    	margin-top: 100px ;
+    	padding: 0;
+	}
+
+	.hero{
+		display: block;
+    	justify-content: none;
+    	max-width: 500px;
+    	height: auto;
+    	margin: 0px;
+    	padding: 0px;
+    	box-sizing: border-box;
+	}
+	
+	.hero > img{
+		position: relative;
+		display: block;
+		z-index: 1;
+    	width: 100%;
+    	height: auto;
+	}
+
+	.carrousel{
+		display: block;
+		background-color: var(--primary-color);
+	    width: 100%;
+	    height: auto;
+	    padding: 1em;
+	    margin: 0em 0 3em;
+	    transform: none;
+	    box-sizing: border-box;
+	}
+	
+	.carrousel > h2{
+	    text-align: center;
+	    padding: 1em 0;
+	    margin-top: 0em;
+	    color: var(--background-color);
+	}
+	.promotions{
+	    box-sizing: border-box;
+	    margin: .4em 0;
+	    padding: 0;
+	    width: 100%;
+	    height: auto;
+	    overflow: hidden;
+	}
+	#promotions-container{
+	    display: grid;
+	    grid-template-areas: 
+	    "image"
+	    "div";
+	}
+	#promotions-container > figure{
+	    max-width: 500px;
+	    grid-area: image;
+	    justify-content: center;
+	}
+	#promotions-container > figure > img{
+	    max-width: 500px
+	}
+	#promotions-container > div{
+	    grid-area: div;
+	    display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    max-width: 500px;
+	    padding: 0;
+	    gap: 1.2em;
+	    color: var(--background-color);
+	}
+
+	.about{
+		max-width: 500px;
+		box-sizing: border-box;
+	    margin: 1em;
+	    padding: 0em;
+	    display: flex;
+	    flex-direction: column;
+	    gap: 4em;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+	
+	.about > h2{
+	    flex-basis: 100%;
+	}
+	
+	.about > div{
+	    flex-basis: 100%;	}
+	
+	.about > div > img{
+	    width: 320px;
+	    height: auto;
+	}
+
+	.reviews{
+    	width: 100%;
+    	background-color: var(--secondary-color);
+    	padding: 2em;
+    	margin: 0;
+	}
+	
+	.reviews > h2{
+    	text-align: center;
+    	margin: 1em 0;
+    	padding: 1em;
+    	font-size: 1.8em;
+	}
+	
+	#reviews-container{
+    	display: flex;
+    	flex-direction: column;
+    	gap: 3em;
+	}
+	
+	#reviews-container > div{
+    	display: flex;
+    	flex-direction: column;
+    	gap: 1em;
+    	text-align: justify;
+    	padding: 1em;
+	}
+
+	#reviews-container > div > img{
+		align-self: center;
+	}
+
+	#reviews-container > div:nth-child(even){
+		border: none;
+		border-top: 3px solid var(--background-color);
+		border-bottom: 3px solid var(--background-color);
+	}
+
+	.offers{
+		justify-content: center;
+    	padding: 2em 0em;
+    	box-sizing: border-box;
+	}
+	
+	.offers > h2 {
+    	text-align: center;
+    	font-size: 1.8em;
+	}
+
+	.offers > div > img{
+	  grid-area: image;
+	  align-self: center;
+	  justify-self:center;
+	  margin-bottom: 2em
+	}
+	
+	.offers > div:nth-child(odd){
+    	display: grid;
+	
+    	margin: 0em;
+    	padding: 1em;
+    	border-right: none;
+	
+    	grid-template-areas:
+    	"image"
+    	"div";
+	
+	    
+	}
+	
+	.offers > div:nth-child(even){
+    	display: grid;
+	
+    	margin: 0em;
+    	padding: 1em;
+    	border-left: none;
+    	border-top: 5px solid var(--primary-color);
+    	border-bottom: 5px solid var(--primary-color);
+	
+    	grid-template-areas:
+    	"image"
+    	"div";
+	}
+	
+	.offers > div > div{
+    	grid-area: div;
+	
+    	display: flex;
+    	flex-direction: column;
+    	gap: 3em;
+    	justify-content: center;
+    	align-items: center;
+    	margin: 0 2em;
+	}
+
+	footer{
+    	display: flex;
+    	flex-direction: column;	
+	}
+}

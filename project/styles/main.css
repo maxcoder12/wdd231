@@ -40,6 +40,7 @@ address{
     font-style: italic;
 }
 
+
 header{
     position: fixed;
     top: 0;
@@ -59,10 +60,13 @@ header{
     box-shadow: 0px 15px 10px 0 var(--text-color);
 }
 
+#showMenu{
+  display: none
+}
+
 nav{
     display: flex;
 }
-
 nav a{
     margin: 0 .3em;
     padding: 1em 1.2em;
@@ -248,6 +252,10 @@ nav a:hover{
     "div image";
 }
 
+.offers > div > img{
+  grid-area: image;
+}
+
 .offers > div > div{
     grid-area: div;
 
@@ -256,6 +264,198 @@ nav a:hover{
     gap: 3em;
     justify-content: center;
     margin: 0 2em;
+}
+
+.menu-main > h1{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2.3em;
+}
+
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-item {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+}
+
+.menu-item h3 {
+  margin-bottom: 0.3rem;
+  color: var(--background-color);
+}
+
+.menu-item p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item span {
+  font-weight: bold;
+  color: var(--background-color);
+}
+
+.wf1{
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--background-color);
+    margin: 0 auto 5em;
+    padding: .8em;
+    border: 3px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.wf1 > h2{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.7em;
+}
+
+.wf1 fieldset{
+    margin: 1rem;
+    border: none;
+    padding: .5rem 0;
+}
+
+.wf1 legend{
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: var(--text-color);
+    font-size: .9rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.wf1 span{
+    color: var(--text-color);
+    font-size: .9em;
+}
+
+.wf1 select, input[type="text"], input[type="email"], input[type="tel"], textarea{
+    padding: .7rem;
+    background-color: var(--soft-gray);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wf1 input[type="checkbox"]{
+    accent-color: var(--accent-color);
+    margin-right: 7px;
+    transform: scale(1.5);
+
+}
+
+
+.wf1 input:required, textarea:required{
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.wf1 input:required:valid, textarea:required:valid{
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.wf1 input[type="submit"]{
+    width: 100%;
+    padding: .8em;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border:  3px solid var(--accent-color);
+    border-radius: 5px;
+
+}
+
+.wf1 input[type="submit"]:hover{
+    background-color: var(--accent-color);
+    border: 3px solid var(--primary-color);
+}
+
+
+.order-container {
+  max-width: 600px;
+  margin: 15em auto 5em;
+  padding: 2rem;
+  background: #fffefc;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.order-container form fieldset {
+  border: 3px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em auto 1.5rem;
+}
+
+.order-container form fieldset legend{
+    margin-bottom: 1.3em
+}
+
+.order-container form label {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.order-container input[type="text"],
+.order-container input[type="tel"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.order-container button[type="submit"] {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-container button[type="submit"]:hover {
+  background-color: #e85959;
+}
+
+#confirmation {
+  text-align: center;
+  padding: 2rem;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 12px;
+  border: 1px solid #c3e6cb;
 }
 
 footer{
