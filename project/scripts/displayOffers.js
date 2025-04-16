@@ -34,11 +34,10 @@ function displayOffer(data){
 
 };
 
-async function fetchUsers(){
+async function fetchOffers(){
   try {
     const response = await fetch("data/product.json");
     const data = await response.json();
-    console.log(data);
     if (response.ok){
       displayOffer(data);
     } else{
@@ -49,4 +48,4 @@ async function fetchUsers(){
   };
 };
 
-fetchUsers();
+fetchOffers();
