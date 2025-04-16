@@ -1,4 +1,4 @@
-const products = [
+[
   {
     "name": "Gourmet Cheese Platter",
     "description": "A selection of the finest cheeses, served with fresh fruits and nuts.",
