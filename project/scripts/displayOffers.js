@@ -22,7 +22,7 @@ function displayOffer(data){
 
 	promotionContainer.innerHTML = `
 		<figure>
-    	    <img width="300" height="400" src="${promotion.image}" alt="${promotion.name}">
+    	    <img loading="lazy" width="300" height="400" src="${promotion.image}" alt="${promotion.name}">
     	</figure>
     	<div>
     	    <h3>${promotion.name}</h3>
