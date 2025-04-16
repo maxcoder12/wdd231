@@ -15,7 +15,7 @@ function displayProduct(data){
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <span>Price: $${product.price}</span>
-      <button class="green-button">Order</button>
+      <a href="order.html" class="green-button">Order</a>
 
     `;
 
