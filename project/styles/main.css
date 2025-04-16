@@ -138,8 +138,8 @@ nav a:hover{
     flex-wrap: wrap;
 }
 #promotions-container > figure{
-    max-width: 400px;
-    flex-basis: 30%;
+    max-width: 100%;
+    flex-basis: 40%;
     align-items: center;
 }
 #promotions-container > figure > img{
@@ -147,8 +147,8 @@ nav a:hover{
     width: 100%;
 }
 #promotions-container > div{
-    flex-basis: 50%
-    max-width: 100%;
+    flex-basis: 30%
+    width: 30%;
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -183,16 +183,32 @@ nav a:hover{
     margin-bottom: 1em;
 }
 
+.about > a{
+  flex-basis: 100%;
+  max-width: 40%
+}
+
 .green-button{
     display: block;
     text-align: center;
-    width: 30%;
+    max-width: 50%;
+
 
     padding: 1.5em 2em;
     border-radius: 5px;
     text-decoration: none;
     background-color: var(--accent-color);
     color: var(--background-color);
+
+    border:1px solid var(--accent-color);
+    border-bottom: 5px solid var(--accent-color)
+}
+
+.green-button:hover{
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border:1px solid var(--accent-color);
+  border-bottom: 5px solid var(--accent-color)
 }
 
 .reviews{
@@ -233,6 +249,8 @@ nav a:hover{
 
 .offers{
     padding: 2em;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .offers > h2 {
@@ -431,7 +449,7 @@ nav a:hover{
 
 .order-container {
   max-width: 600px;
-  margin: 7em auto 5em;
+  margin: 15em auto 5em;
   padding: 2rem;
   background: #fffefc;
   border-radius: 16px;
