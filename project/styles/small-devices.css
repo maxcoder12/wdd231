@@ -26,18 +26,16 @@
 	}
 	
 	nav{
-	    display: none;
+	    display: grid;
 	    flex-basis: 100%;
-	    flex-direction: column;
-	    z-index: -1;
-	    transition: grid-template-rows .3s ease;
-	    grid-template-rows: 0 0 0;
+	    height: 0px;
+	    grid-template-rows: 0fr;
+	    transition: height .3s linear;
+	    overflow: hidden;
 	}
 
 	.showed{
-		display: flex;
-		flex-direction: column;
-		grid-template-rows: 1fr;
+		height: 250px;
 	}
 	
 	nav a{
