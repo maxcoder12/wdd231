@@ -11,7 +11,7 @@ function displayProduct(data){
     div.classList.add("menu-item");
 
     div.innerHTML = `
-      <img width="300" height="300" src="${product.image}">
+      <img loading="lazy" width="300" height="300" src="${product.image}">
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <span>Price: $${product.price}</span>
@@ -35,7 +35,7 @@ function displayProduct(data){
   });
 };
 
-async function fetchUsers(){
+async function fetchProducts(){
   try {
     const response = await fetch("data/product.json");
     const data = await response.json();
@@ -50,4 +50,4 @@ async function fetchUsers(){
   };
 };
 
-fetchUsers();
+fetchProducts();
