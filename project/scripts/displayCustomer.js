@@ -21,7 +21,6 @@ async function fetchUsers(){
 	try {
 		const response = await fetch("data/reviews.json");
 		const data = await response.json();
-		console.log(data);
 		if (response.ok){
 			displayCustomer(data);
 		} else{
