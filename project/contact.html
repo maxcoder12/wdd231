@@ -14,13 +14,16 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/small-devices.css">
 
+    <script type="text/javascript" src="scripts/submitForm.js" defer></script>
+    <script type="text/javascript" src="scripts/showMenu.js" defer></script>
+
 </head>
 <body>
 
     <header>
         <h2>FlavorBites</h2>
         <span id="showMenu">&#9776;</span>
-        <nav>
+        <nav id="menu">
             <a title="home" href="index.html">Home</a>
             <a title="menu" href="menu.html">Menu</a>
             <a title="order" href="order.html">Order</a>
@@ -29,7 +32,7 @@
     </header>
 
     <main>
-        <form id="contactForm" action="sent.html" method="get" class="wf1">
+        <form id="contactForm" class="wf1">
             <h2>Contact us!</h2>
                         
             <fieldset>
@@ -59,6 +62,12 @@
             <input type="submit" value="Send message">
 
         </form>
+
+
+        <dialog id="confirmation">
+            <h3>Thank you!</h3>
+            <p>Your message has been sent. We’ll be in contact with you soon!</p>
+        </dialog>
     </main>
 
     <footer>
