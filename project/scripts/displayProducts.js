@@ -39,7 +39,6 @@ async function fetchProducts(){
   try {
     const response = await fetch("data/product.json");
     const data = await response.json();
-    console.log(data);
     if (response.ok){
       displayProduct(data);
     } else{
